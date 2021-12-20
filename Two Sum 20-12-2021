@@ -17,7 +17,7 @@ Output: [1,2]
 
 
 CODE : 
-
+BINARY SEARCH ALGORITHEM
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -56,4 +56,26 @@ public:
         return v;
     }
     
+};
+
+
+# NORAML CODE
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> result;
+//         array = []
+//             0  1  2  3  4  5
+//     nums = [10,20,30,40,50,60]
+        for(int i=0;i<nums.size();i++){
+            for(int j=i+1;j<nums.size();j++){
+                if(nums[i]+nums[j]==target){
+                    result.push_back(i);
+                    result.push_back(j);
+                    break;
+                }
+            }
+        }
+        return result;
+    }
 };
