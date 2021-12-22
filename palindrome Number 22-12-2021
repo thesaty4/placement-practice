@@ -17,16 +17,21 @@ Explanation: 121 reads as 121 from left to right and from right to left.
 class Solution {
 public:
     bool isPalindrome(int x) {
-        int copy=x,rev=0,rem;
+        int copy=x;
+        long int rev=0,rem; // it can be store lorger number
+        if(x<0 || (x%10==0 && x!=0)){ 
+            return false;
+        }
         while(copy!=0){
             rem=copy%10;
             rev=(rev*10)+rem;
             copy/=10;
         }
+        
         if(rev==x){
             return true;
-        }else{
-            return false;
         }
+            return false;
     }
+};
 };
