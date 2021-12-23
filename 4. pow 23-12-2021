@@ -1,0 +1,40 @@
+Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+Example 1:
+
+Input: x = 2.00000, n = 10
+Output: 1024.00000
+
+
+solution :
+class Solution {
+public:
+    double myPow(double x, int n) {
+        return pow(x,n);
+    }
+};
+
+Test case :
+Your input
+2.00000
+10
+2.10000
+3
+2.00000
+-2
+
+Output
+1024.00000
+9.26100
+0.25000
+
+Expected
+1024.00000
+9.26100
+0.25000
+
+
+Success
+Details
+Runtime: 0 ms, faster than 100.00% of C++ online submissions for Pow(x, n).
+Memory Usage: 6.2 MB, less than 10.87% of C++ online submissions for Pow(x, n).
+Next challenges: 
